@@ -1,0 +1,46 @@
+preset = "off"
+disable-type-errors-in-ide = true
+permissive-ignores = true
+skip-interpreter-query = false
+python-interpreter-path = "venv/Scripts/python.exe"
+site-packages-path = [
+    "venv/Lib/site-packages"
+]
+search-path = [
+    ".",
+    "venv/Lib/site-packages"
+]
+project-includes = [
+    "**/*.py"
+]
+project-excludes = [
+    "**/node_modules",
+    "**/__pycache__",
+    "**/venv/**/*"
+]
+enabled-ignores = [
+    "type",
+    "pyrefly",
+    "pyright",
+    "mypy",
+    "ty",
+    "pyre",
+    "zuban"
+]
+type-ignore-unknown-tag-behavior = "suppress"
+
+[errors]
+bad-override = "ignore"
+invalid-variance = "ignore"
+bad-override-param-name = "ignore"
+missing-import = "ignore"
+missing-attribute = "ignore"
+not-callable = "ignore"
+unbound-name = "ignore"
+bad-argument-type = "ignore"
+bad-function-definition = "ignore"
+no-matching-overload = "ignore"
+implicit-fallthrough = "ignore"
+unsupported-operation = "ignore"
+unknown-name = "ignore"
+untyped-attribute = "ignore"

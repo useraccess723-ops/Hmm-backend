@@ -1,0 +1,7 @@
+[tool.pyrefly]
+preset = "off"
+python-interpreter-path = "venv/Scripts/python.exe"
+search-path = [
+    ".",
+    "venv/Lib/site-packages"
+]
